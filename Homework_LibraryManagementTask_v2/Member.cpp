@@ -44,7 +44,7 @@ void Member::showMemberInfo() {
                     "\t* memberID: "    << this->getMemberID() << std::endl;
 }
 
-void Member::hireBook(Book* book) {
+void Member::borrowBook(Book* book) {
     std::cout << "Following book: " << std::endl <<
         "---------------------------" << std::endl;
     book->showBookInfo();

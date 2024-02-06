@@ -42,7 +42,7 @@ std::string Book::getISBN() {
     return this->ISBN;
 }
 
-// Member functions:
+// Display-info method:
 void Book::showBookInfo() {
     std::cout << "Book title: "     << this->title << std::endl <<
                     "\t* author: "  << this->author << std::endl <<
