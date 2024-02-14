@@ -18,6 +18,8 @@ public:
 
 	std::string getDepartmentName();
 
+	int getEmployeesCount();
+
 	void addEmployee(Employee*);
 
 	void displayEmployees();

@@ -4,7 +4,6 @@
 
 Department::Department(std::string departmentName_) {
 	setDepartmentName(departmentName_);
-	this->employeesCount;
 }
 
 void Department::setDepartmentName(std::string departmentName_) {
@@ -13,6 +12,10 @@ void Department::setDepartmentName(std::string departmentName_) {
 
 std::string Department::getDepartmentName() {
 	return this->departmentName;
+}
+
+int Department::getEmployeesCount() {
+	return this->employeesCount;
 }
 
 void Department::addEmployee(Employee* employee) {
@@ -27,4 +30,6 @@ void Department::displayEmployees() {
 	{
 		employee->showEmployeeInfo();
 	}
+				
+	std::cout << "-----------------------------------------------------\nTotal number of employees: " << this->getEmployeesCount() << std::endl;
 }
