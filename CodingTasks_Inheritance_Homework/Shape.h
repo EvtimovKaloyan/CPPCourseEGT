@@ -5,13 +5,12 @@
 class Shape {
 
 public:
+
 	Shape(std::string);
 
-	virtual void draw();
-	
-protected:
-	std::string shapeColour = "red";
+	void draw();
 
-private:
-	std::string shapeType = " shape";
+protected:
+
+	std::string color;
 };
