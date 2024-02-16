@@ -1,10 +1,8 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle(std::string colour) : Shape(colour){}
+Rectangle::Rectangle(std::string color) : Shape(color) {}
 
-void Rectangle::draw() { 
-	
-	//Shape::draw();
-	
-	std::cout << "Drawing a " << this->shapeColour << " rectangle" << std::endl;
+void Rectangle::draw() {
+
+	std::cout << "Drawing a " << this->color << " rectangle" << std::endl;
 }
