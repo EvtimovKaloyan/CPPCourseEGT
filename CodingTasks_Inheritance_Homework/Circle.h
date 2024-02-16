@@ -6,11 +6,7 @@ class Circle : public Shape {
 
 public:
 
-	Circle(std::string colour);
+	Circle(std::string);
 
-	void draw() override;
-
-private:
-
-	std::string shapeType = " circle";
+	void draw();
 };
