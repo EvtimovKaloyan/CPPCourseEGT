@@ -1,5 +1,5 @@
 #include "Shape.h"
 
-Shape::Shape(std::string colour) { this->shapeColour = colour; }
+Shape::Shape(std::string colour) { this->color = colour; }
 
-void Shape::draw() { std::cout << "Drawing a " << this->shapeColour << this->shapeType << std::endl; }
+void Shape::draw() { std::cout << "Drawing a " << this->color << " shape" << std::endl; }
