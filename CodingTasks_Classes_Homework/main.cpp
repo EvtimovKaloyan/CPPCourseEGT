@@ -2,18 +2,18 @@
 
 class Book {
 public:
-	Book(std::string title, std::string author, int pages) { this->bookTitle = title; this->authorName = author; this->bookPagesCount = pages; }
+	Book(std::string title, std::string author, int pages) { this->title = title; this->author = author; this->pages = pages; }
 
-	void displayBookInfo() {
-		std::cout << "Book title: " << this->bookTitle << std::endl 
-					<< "\tauthor: " << this->authorName << std::endl 
-					<< "\tpages: " << this->bookPagesCount << std::endl;
+	void display() {
+		std::cout << "Book title: " << this->title << std::endl 
+					<< "\tauthor: " << this->author << std::endl 
+					<< "\tpages: " << this->pages << std::endl;
 	}
 
 private:
-	std::string bookTitle;
-	std::string authorName;
-	int bookPagesCount;
+	std::string title;
+	std::string author;
+	int pages;
 };
 
 int main() {
@@ -21,9 +21,9 @@ int main() {
 	Book book2("Eat and run", "S. Eurekk", 225);
 	Book book3("Run or die", "K. Jornette", 386);
 
-	book1.displayBookInfo();
-	book2.displayBookInfo();
-	book3.displayBookInfo();
+	book1.display();
+	book2.display();
+	book3.display();
 
 	return 0;
 }
