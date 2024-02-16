@@ -6,11 +6,7 @@ class Rectangle : public Shape {
 
 public:
 
-	Rectangle(std::string colour);
+	Rectangle(std::string);
 
-	void draw() override;
-
-private:
-
-	std::string shapeType = " rectangle";
+	void draw();
 };
